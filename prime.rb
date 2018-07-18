@@ -3,11 +3,7 @@ def prime?(integer)
     return false 
   else
     array = (2...(integer)).to_a 
-    if array.any? {|x| integer % x == 0} 
-      return true 
-    else
-      return false 
-    end
+    array.any? {|x| integer % x == 0} 
   end
  
 end
