@@ -1,5 +1,9 @@
 def prime?(integer)
   array = (1...(integer)).to_a 
-  array.any? {|x| integer % x != 0} 
+  if array.count {|x| integer % x = 0} > 2 
+    return false 
+  else
+    return true 
+  end
  
 end
