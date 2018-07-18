@@ -3,8 +3,7 @@ def prime?(integer)
     return false 
   else
     array = (1...(integer)).to_a 
-    array.count {|x| integer % x == 0}
-    if array.count >= 3 
+    if array.count {|x| integer % x == 0} >= 3
       return false 
     else
       return true 
