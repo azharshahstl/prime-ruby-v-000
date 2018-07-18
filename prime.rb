@@ -6,7 +6,7 @@ def prime?(integer)
    if  array.any? {|x| integer % x == 0} 
      return false
    else
-     return false
+     return true
    end 
   end
  
