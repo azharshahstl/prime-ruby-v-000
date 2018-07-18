@@ -3,10 +3,11 @@ def prime?(integer)
     return false 
   else
     array = (1...(integer)).to_a 
-    if array.count {|x| integer % x == 0} > 2 
-    return false 
+    array.count {|x| integer % x == 0}
+    if array.count > 2 
+      return false 
     else
-    return true 
+      return true 
     end
   end
  
