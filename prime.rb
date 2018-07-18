@@ -6,7 +6,7 @@ def prime?(integer)
     if array.count {|x| integer % x == 0} = 2 
       return true 
     else
-      return true 
+      return false 
     end
   end
  
