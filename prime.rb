@@ -3,7 +3,7 @@ def prime?(integer)
     return false 
   else
     array = (2...(integer - 1)).to_a 
-    if array.all? {|x| integer % x == 0} == 1 
+    if array.any? {|x| integer % x == 0} == 1 
       return true 
     else
       return false 
